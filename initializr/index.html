@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html class="no-js" lang="fr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Cheat Sheet Emmet-Atom</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">My Cheat Sheet Emmet</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right" role="form">
+          <div class="form-group">
+            <img id="met" src="emmett.jpeg" alt="logo emmet" class="visible-xs visible-sm visible-lg visible-md pull-right">
+            <img id="MT" src="emmett.jpeg" alt="logo emmet">
+        </form>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+  </nav>
+
+  <!--c'est l'encadré en gris-le header-->
+  <header class="jumbotron">
+    <div class="container">
+      <h1>Welcome to my Cheat Sheet Emmet</h1>
+
+      <p><a class="btn btn-primary btn-lg" href="#ongletThree" role="button">Enjoy !</a></p>
+    </div>
+  </header>
+  <div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="capture1.png" alt="First Slide">
+        </div>
+        <div class="item">
+          <img src="capture2.png" alt="Second Slide">
+        </div>
+        <div class="item">
+          <img src="capture3.png" alt="Third Slide">
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Début de l'accordéon -->
+
+    <hr>
+    <!--onglet-->
+    <div class="bs-example">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#ongletOne">1. HTML</a>
+            </h4>
+          </div>
+          <div id="ongletOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <p>Il existe sur Atom (éditeur de texte) une manière de taper encore plus rapidement les balises pour écrire un code.
+                <br>Pour le fichier HTML, on a (cf les images ci-dessus):
+                <br>
+                <div class="table">
+                  <ul>
+                    <li>
+                      <kbd>ul>li*5 :</kbd>(ul) (li)(/li) (li)(/li) (li)(/li) (li)(/li) (li)(/li) (/ul)</li>
+                    <li>
+                      <kbd>div+p+bq :</kbd>(div)(/div) (p)(/p) (blockquote)(/blockquote)</li>
+                    <li>
+                      <kbd>nav>ul>li :</kbd>(nav) (ul) (li)(/li) (/ul) (/nav)</li>
+                    <li>
+                      <kbd>#header :</kbd>(div id="header")(/div)</li>
+                    <li>
+                      <kbd>.class :</kbd>(div class="class")(/div)</li>
+                    <li>
+                      <kbd>meta:vp :</kbd>(meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /)</li>
+                    <a href="http://docs.emmet.io/cheat-sheet/" target="_blank">Pour voir encore plus de raccourcis</a></p>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#ongletTwo">2. CSS</a>
+            </h4>
+          </div>
+          <div id="ongletTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>En ce qui concerne le CSS, c'est le même principe :
+                <br>
+                <div class="table">
+                  <li>
+                    <kbd>pos :</kbd>position: relative</li>
+                  <li>
+                    <kbd>pos:s :</kbd>position: static</li>
+                  <li>
+                    <kbd>pos:a :</kbd>position: absolute</li>
+                  <li>
+                    <kbd>t :</kbd>top</li>
+                  <li>
+                    <kbd>t:a</kbd>top : auto</li>
+                  <li>
+                    <kbd>z</kbd>z-index: </li>
+                  <li>
+                    <kbd>d:b</kbd>display: block</li>
+                  <li>
+                    <kbd>d:ib</kbd>display: inline-block</li>
+                  <li>
+                    <kbd>bg :</kbd>background</li>
+                  <li>
+                    <kbd>bgi</kbd>background-image:url()</li>
+                  <li>
+                    <kbd>bgr:n</kbd>background-repeat:no-repeat</li>
+
+                  <a href="http://docs.emmet.io/cheat-sheet/" target="_blank">En savoir plus.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#ongletThree">3. Emmet !? Qu'est-ce que c'est?</a>
+            </h4>
+          </div>
+          <div id="ongletThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Pour plus de renseignements je vous laisse un tuto qui explique très bien ce que c'est.
+                <a href="http://www.grafikart.fr/tutoriels/sublime-text-2/emmet-376" target="_blank">Tuto Emmet</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <footer>
+
+        <p>REM | Cheat Sheet NaiNai |</p>
+      </footer>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+          function() {
+            (b[l].q = b[l].q || []).push(arguments)
+          });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

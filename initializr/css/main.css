@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Cheat sheet Emmet custom styles
+   ========================================================================== */
+
+
+/* Corps entier du Site*/
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  /*background-color: #4db6ac;*/
+}
+
+/*barre de nav*/
+
+.navbar-brand {
+  margin-top: 5%;
+}
+
+/*aligner et arranger le diaporama d'image*/
+
+
+/*<style type="text/css"> --> si je veux un fond gris clair*/
+
+.carousel {
+  background: #2f4357;
+  margin-top: 20px;
+}
+.carousel .item img {
+  margin: 0 auto;
+  /* permet d'aligner les images horizontalement et centrer */
+}
+.bs-example {
+  margin: 20px;
+}
+
+/*</style>*/
+
+
+/*régler position logo + titre*/
+
+#navbar div img {
+  height:15%;
+  width:15%;
+
+}
+.table {
+  border: 3px solid #304ffe;
+}
+/*1ère image qui n'est pas en pull-right*/
+#MT{
+  height: 15%;
+  width: 15%;
+  float: left;
+  visibility: hidden;
+  display: block;
+}
+
+#met {
+  height:15%;
+  width:15%;
+  visibility: visible;
+  display: block;
+
+}
+@media queries and (min-width: 320px) and (max-width:768px){
+#met {
+  visibility: hidden;
+  display: none;
+  }
+
+#MT{
+  height: 5%;
+  width: 5%;
+  float: left;
+  visibility: visible;
+  display: inline-block;
+}
+
+  .navbar-brand {
+    margin-top: 2%;
+  }
+}
